@@ -51,3 +51,6 @@ class ClienteSeachAPIView(APIView):
         serializer_class = ClienteSerializer(resul_page, many=True)
 
         return pagination_class.get_paginated_response(serializer_class.data)
+
+
+        
